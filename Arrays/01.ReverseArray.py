@@ -15,8 +15,9 @@ String Output: "fedcba"
 def reverse_sequence(seq):
     # If input is a string, convert to list for in-place reversal
     is_string = isinstance(seq, str)
+    print(is_string)
     arr = list(seq) if is_string else seq
-
+    print(arr)
     left = 0
     right = len(arr) - 1
     while left < right:
